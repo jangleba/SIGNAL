@@ -1,0 +1,13 @@
+SIGNAL — darmowa publikacja przez GitHub Pages
+
+1. Rozpakuj plik ZIP.
+2. W repozytorium jangleba/SIGNAL wybierz Add file -> Upload files.
+3. Prześlij cały folder docs do katalogu głównego repozytorium.
+4. Zatwierdź zmiany przyciskiem Commit changes.
+5. Wejdź w Settings -> Pages.
+6. Source: Deploy from a branch.
+7. Branch: main, folder: /docs.
+8. Kliknij Save i poczekaj na publikację.
+
+Adres strony:
+https://jangleba.github.io/SIGNAL/
