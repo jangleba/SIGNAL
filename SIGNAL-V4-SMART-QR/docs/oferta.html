@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2826">
+  <meta name="description" content="Interaktywna demonstracja świadomego potwierdzenia kontaktu w SIGNAL.">
+  <title>Potwierdź następny krok — SIGNAL</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="offer-app">
+  <header class="app-header">
+    <a class="logo" href="index.html" aria-label="Wróć do strony SIGNAL">
+      <svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg>
+      <span>SIGNAL</span>
+    </a>
+    <div class="app-header-note"><span></span> Demo — nic nie zostanie wysłane</div>
+    <a class="app-close" href="index.html" aria-label="Zamknij ofertę">×</a>
+  </header>
+
+  <main class="offer-workspace">
+    <aside class="offer-context">
+      <div>
+        <div class="context-label-row"><p class="context-label" data-context-label>Konkretna firma · konkretna oferta</p><span class="entry-origin-badge" data-entry-badge>Wejście z linku</span></div>
+        <div class="context-company"><div class="company-monogram large">TP</div><div><strong data-offer-company>TermoPilot</strong><span data-offer-region>Warszawa + 60 km</span></div></div>
+        <h1 data-offer-title>Kompleksowa termomodernizacja domu</h1>
+        <p class="context-description" data-offer-description>Pompa ciepła, fotowoltaika oraz montaż po sprawdzeniu parametrów budynku.</p>
+      </div>
+
+      <dl class="context-facts">
+        <div><dt>Orientacyjny koszt</dt><dd data-offer-cost>45–75 tys. zł brutto</dd></div>
+        <div><dt>Obszar</dt><dd data-offer-area>Warszawa i okolice do 60 km</dd></div>
+        <div><dt>Najbliższy termin</dt><dd>Jutro, 10:30</dd></div>
+        <div><dt>Ważny warunek</dt><dd data-offer-condition>Dotacja nie jest gwarantowana</dd></div>
+      </dl>
+
+      <div class="context-protection">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.8 8.1 7 10 4.2-1.9 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg>
+        <p><strong>Najpierw wybierasz. Potem potwierdzasz.</strong><span>Firma nie widzi Cię przed ostatnim krokiem.</span></p>
+      </div>
+    </aside>
+
+    <section class="decision-workspace" aria-live="polite">
+      <div class="flow-header">
+        <button class="back-control" type="button" data-flow-back hidden>← Wstecz</button>
+        <div class="step-status"><span data-step-label>Decyzja</span><div class="step-track five" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i></div></div>
+      </div>
+
+      <div class="no-send-strip"><span>✓</span><p><strong data-no-send-title>Żadne kliknięcie poniżej nie wysyła danych.</strong> <span data-no-send-copy>Zgłoszenie powstaje dopiero po podsumowaniu i kodzie.</span></p></div>
+
+      <div class="flow-stage active" data-stage="decision">
+        <p class="stage-kicker">Zanim podasz dane</p>
+        <h2 data-decision-title>Czy ta konkretna oferta pasuje do Twojej potrzeby?</h2>
+        <p class="stage-intro" data-decision-intro>Każda odpowiedź ma inny skutek. „Sprawdzam” i „Nie” nie tworzą kontaktu.</p>
+        <div class="intent-list">
+          <button class="intent-option yes" type="button" data-intent="yes">
+            <span class="intent-icon">✓</span><span><strong>Tak, chcę określić szczegóły</strong><small>Bez przekazywania numeru na tym etapie</small></span><i>→</i>
+          </button>
+          <button class="intent-option browse" type="button" data-intent="browse">
+            <span class="intent-icon">○</span><span><strong>Tylko sprawdzam</strong><small>Pokaż warunki bez danych i kontaktu</small></span><i>→</i>
+          </button>
+          <button class="intent-option no" type="button" data-intent="no">
+            <span class="intent-icon">×</span><span><strong>Nie, to nie dla mnie</strong><small>Zakończ bez pytań i dalszych wiadomości</small></span><i>→</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="flow-stage" data-stage="needs" hidden>
+        <p class="stage-kicker">Potrzeba i miejsce</p>
+        <h2>Czego potrzebujesz i gdzie?</h2>
+        <p class="stage-intro">Dwa krótkie ustalenia zastępują rozmowę zaczynaną od zera.</p>
+        <fieldset class="choice-fieldset need-fieldset">
+          <legend>Najbliżej mi do:</legend>
+          <div class="need-options" data-need-options>
+            <button type="button" data-need="Pełna termomodernizacja"><span>Pełny zakres</span><small>Chcę połączyć kilka rozwiązań</small><i>✓</i></button>
+            <button type="button" data-need="Pompa ciepła"><span>Pompa ciepła</span><small>Dobór lub wymiana źródła ogrzewania</small><i>✓</i></button>
+            <button type="button" data-need="Fotowoltaika"><span>Fotowoltaika</span><small>Instalacja dopasowana do zużycia</small><i>✓</i></button>
+            <button type="button" data-need="Najpierw ocena doradcy"><span>Najpierw ocena</span><small>Potrzebuję pomocy w wyborze zakresu</small><i>✓</i></button>
+          </div>
+        </fieldset>
+        <label class="location-field"><span>Kod pocztowy lub miejscowość realizacji</span><input type="text" id="serviceLocation" placeholder="np. 05-500 Piaseczno" autocomplete="postal-code"><small>Sprawdzimy zgodność z obszarem firmy. Bez adresu ulicy.</small></label>
+        <p class="inline-error" data-needs-error role="alert"></p>
+        <button class="button button-primary flow-next" type="button" data-to-action disabled>Dalej: wybierz następny krok <span>→</span></button>
+      </div>
+
+      <div class="flow-stage" data-stage="action" hidden>
+        <p class="stage-kicker">Następny krok</p>
+        <h2>Co dokładnie ma zrobić firma?</h2>
+        <p class="stage-intro">Zaznacz jedną czynność. Nic nie przejdzie dalej bez przycisku „Dalej”.</p>
+        <div class="action-options selectable-actions">
+          <button type="button" data-action="Krótka rozmowa" data-duration="15 minut"><span class="option-number">01</span><span><strong>Krótka rozmowa</strong><small>Weryfikacja potrzeb i pytań, około 15 minut</small></span><i>✓</i></button>
+          <button type="button" data-action="Wstępna wycena" data-duration="25 minut"><span class="option-number">02</span><span><strong>Wstępna wycena</strong><small>Orientacyjny zakres i kolejne kroki, około 25 minut</small></span><i>✓</i></button>
+          <button type="button" data-action="Wizyta doradcy" data-duration="45 minut"><span class="option-number">03</span><span><strong>Wizyta doradcy</strong><small>Spotkanie w miejscu realizacji, około 45 minut</small></span><i>✓</i></button>
+        </div>
+        <button class="button button-primary flow-next" type="button" data-to-schedule disabled>Dalej: wybierz termin <span>→</span></button>
+      </div>
+
+      <div class="flow-stage" data-stage="schedule" hidden>
+        <p class="stage-kicker">Kanał i termin</p>
+        <h2>Kiedy i w jaki sposób?</h2>
+        <p class="stage-intro">Firma dostanie dokładnie ten kanał i termin — bez telefonu z zaskoczenia.</p>
+        <fieldset class="choice-fieldset">
+          <legend>Kanał</legend>
+          <div class="channel-options">
+            <button type="button" data-channel="Telefon"><span>Telefon</span><small>na potwierdzony numer</small><i>✓</i></button>
+            <button type="button" data-channel="Wideorozmowa"><span>Wideorozmowa</span><small>link przed spotkaniem</small><i>✓</i></button>
+            <button type="button" data-channel="Wizyta na miejscu"><span>Na miejscu</span><small>w miejscu usługi</small><i>✓</i></button>
+          </div>
+        </fieldset>
+        <fieldset class="choice-fieldset">
+          <legend>Termin</legend>
+          <div class="slot-options">
+            <button type="button" data-slot="Jutro, 10:30"><span>Jutro</span><strong>10:30</strong></button>
+            <button type="button" data-slot="Jutro, 17:30"><span>Jutro</span><strong>17:30</strong></button>
+            <button type="button" data-slot="Czwartek, 12:00"><span>Czwartek</span><strong>12:00</strong></button>
+            <button type="button" data-slot="Piątek, 16:00"><span>Piątek</span><strong>16:00</strong></button>
+          </div>
+        </fieldset>
+        <button class="button button-primary flow-next" type="button" data-to-summary disabled>Dalej: sprawdź podsumowanie <span>→</span></button>
+      </div>
+
+      <div class="flow-stage" data-stage="summary" hidden>
+        <p class="stage-kicker">Ostatni krok</p>
+        <h2>Sprawdź wszystko przed przekazaniem numeru.</h2>
+        <p class="stage-intro">Jeżeli coś się nie zgadza, wróć i zmień wybór. Firma nadal nie ma Twoich danych.</p>
+        <div class="confirmation-sheet" data-summary></div>
+        <div class="contact-form">
+          <label><span>Imię</span><input type="text" id="customerName" placeholder="np. Anna" autocomplete="given-name"></label>
+          <label><span>Numer telefonu</span><input type="tel" id="customerPhone" placeholder="np. 500 600 700" inputmode="tel" autocomplete="tel"></label>
+        </div>
+        <label class="single-consent"><input type="checkbox" id="singleConsent"><span data-consent-copy>Chcę, aby wyłącznie TermoPilot skontaktował się ze mną w wybranej sprawie, kanale i terminie.</span></label>
+        <p class="form-error" data-form-error role="alert"></p>
+        <button class="button button-primary flow-next" type="button" data-send-code>Wyślij kod potwierdzający <span>→</span></button>
+        <div class="otp-panel" data-otp-panel hidden>
+          <div><strong>Kod demonstracyjny: 4821</strong><span>W prawdziwym systemie przyjdzie SMS-em</span></div>
+          <input type="text" inputmode="numeric" maxlength="4" placeholder="0000" aria-label="Kod potwierdzający" data-otp-input>
+          <button class="button button-dark" type="button" data-confirm>Potwierdzam całość</button>
+        </div>
+      </div>
+
+      <div class="flow-stage terminal-stage" data-stage="browse" hidden>
+        <div class="terminal-symbol neutral">○</div>
+        <p class="stage-kicker">Bez kontaktu</p>
+        <h2 data-browse-title>Możesz spokojnie sprawdzać dalej.</h2>
+        <p data-browse-copy>Firma nie otrzymała żadnych danych. Nie powstało zgłoszenie ani automatyczny follow-up.</p>
+        <div class="browse-details"><div><span>Zakres</span><strong data-browse-scope>Pompa ciepła, fotowoltaika i montaż</strong></div><div><span>Koszt</span><strong data-browse-cost>45–75 tys. zł brutto</strong></div><div><span>Ograniczenie</span><strong data-browse-condition>Ostateczna cena po ocenie budynku</strong></div></div>
+        <div class="terminal-buttons"><a class="button button-light" href="index.html">Zakończ bez kontaktu</a><button class="button button-primary" type="button" data-change-mind>Jednak określam potrzebę <span>→</span></button></div>
+      </div>
+
+      <div class="flow-stage terminal-stage" data-stage="no" hidden>
+        <div class="terminal-symbol stop">×</div>
+        <p class="stage-kicker">Koniec procesu</p>
+        <h2 data-no-title>Rozumiemy. Niczego nie przekazaliśmy firmie.</h2>
+        <p data-no-copy>Nie pytamy o powód, nie proponujemy innej firmy i nie tworzymy listy do późniejszego kontaktu.</p>
+        <div class="terminal-buttons"><a class="button button-light" href="index.html">Wróć do strony głównej</a><button class="text-button" type="button" data-restart>Uruchom demo ponownie</button></div>
+      </div>
+
+      <div class="flow-stage terminal-stage" data-stage="success" hidden>
+        <div class="terminal-symbol success">✓</div>
+        <p class="stage-kicker">Świadomie potwierdzone</p>
+        <h2>Firma dostała kompletną kartę ustaleń.</h2>
+        <p data-success-copy>TermoPilot może skontaktować się wyłącznie w wybranej sprawie, kanale i terminie.</p>
+        <div class="receipt" data-receipt></div>
+        <div class="signal-pass"><span class="pass-label">CYFROWE POTWIERDZENIE SIGNAL</span><div><strong data-pass-id>SG-DEMO</strong><em>firma widzi dokładnie ten sam zakres</em></div><p>To nie jest ogólna zgoda marketingowa. Potwierdzenie dotyczy jednej firmy, jednej potrzeby i wybranego terminu.</p></div>
+        <p class="receipt-note">Źródło kampanii zapisano technicznie, aby firma wiedziała, skąd przyszło potwierdzenie. Żadna inna firma nie dostała danych.</p>
+        <div class="terminal-buttons"><button class="button button-danger" type="button" data-cancel-action>Anuluj potwierdzenie</button><a class="button button-light" href="index.html">Zakończ demo</a></div>
+      </div>
+
+      <div class="flow-stage terminal-stage" data-stage="cancelled" hidden>
+        <div class="terminal-symbol stop">×</div>
+        <p class="stage-kicker">Status zmieniony</p>
+        <h2>Potwierdzenie zostało anulowane.</h2>
+        <p>W panelu firmy pojawi się status „nie kontaktować”, a numer zostanie ukryty przed dalszą obsługą.</p>
+        <a class="button button-light" href="index.html">Wróć do strony głównej</a>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

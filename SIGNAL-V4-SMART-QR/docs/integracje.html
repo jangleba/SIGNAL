@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081f1e">
+  <meta name="description" content="Demonstracyjny model połączenia źródeł leadów z SIGNAL.">
+  <title>Integracje źródeł — SIGNAL dla Firm</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page integration-page">
+  <aside class="dashboard-sidebar" data-dashboard-sidebar>
+    <div class="sidebar-logo"><a class="logo inverted" href="panel.html"><svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg><span>SIGNAL</span></a><button type="button" data-sidebar-close aria-label="Zamknij menu">×</button></div>
+    <div class="workspace-switch"><div class="workspace-logo">TP</div><div><strong>TermoPilot</strong><span>Oddzielny workspace</span></div><i>⌄</i></div>
+    <nav class="sidebar-nav" aria-label="Panel firmy">
+      <p>PRACA</p>
+      <a href="panel.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Przegląd</a>
+      <a href="panel.html#records"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Wspólna skrzynka<span class="nav-count">8</span></a>
+      <a href="#"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Kalendarz</a>
+      <p>ZARZĄDZANIE</p>
+      <a href="kampanie.html"><svg viewBox="0 0 24 24"><path d="M10 14 21 3M15 3h6v6M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9"/></svg>Kampanie i linki</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>Oferty</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V4M16 19v-7M22 19V6"/></svg>Wyniki</a>
+      <a class="active" href="integracje.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></svg>Integracje</a>
+    </nav>
+    <div class="sidebar-footer"><div class="user-avatar">JG</div><div><strong>Jan Gleba</strong><span>Administrator</span></div><button type="button">•••</button></div>
+  </aside>
+
+  <main class="dashboard-content">
+    <header class="dashboard-topbar">
+      <button class="dashboard-menu" type="button" data-sidebar-open aria-label="Otwórz menu">☰</button>
+      <div class="dashboard-breadcrumb"><span>TermoPilot</span><i>/</i><strong>Integracje źródeł</strong></div>
+      <div class="dashboard-top-actions"><span class="demo-label">Projekt integracji · demo</span><a class="icon-button back-to-panel" href="panel.html" aria-label="Wróć do panelu">←</a></div>
+    </header>
+
+    <div class="dashboard-inner integration-inner">
+      <section class="dashboard-heading integration-heading"><div><p>Jedno miejsce dla wszystkich wejść</p><h1>Nie przenosimy leadów. Synchronizujemy ich stan.</h1><span>Każdy rekord zachowuje identyfikator źródłowy, dlatego po decyzji klienta zostaje uzupełniony — a nie utworzony ponownie.</span></div></section>
+
+      <div class="static-demo-warning"><span>DEMO</span><p>Ten ekran pokazuje docelowy sposób działania. GitHub Pages nie odbiera prawdziwych webhooków i nie wysyła SMS-ów; do działającej integracji potrzebny będzie bezpieczny backend.</p></div>
+
+      <section class="connector-grid">
+        <article>
+          <div class="connector-top"><span class="connector-logo meta">M</span><div><strong>Meta Lead Ads</strong><small>Instagram + Facebook</small></div><span class="connector-status design">Projekt</span></div>
+          <p>Webhook przyjmuje nowy lead wraz z identyfikatorem formularza, reklamy i kampanii.</p>
+          <dl><div><dt>Klucz rekordu</dt><dd>leadgen_id</dd></div><div><dt>Startowy status</dt><dd>Czeka na decyzję</dd></div><div><dt>Kontakt firmy</dt><dd>Zablokowany</dd></div></dl>
+        </article>
+        <article>
+          <div class="connector-top"><span class="connector-logo web">W</span><div><strong>Formularz WWW</strong><small>Strona firmy</small></div><span class="connector-status design">Projekt</span></div>
+          <p>Formularz wysyła dane do jednego endpointu SIGNAL zamiast tworzyć osobną listę.</p>
+          <dl><div><dt>Klucz rekordu</dt><dd>submission_id</dd></div><div><dt>Startowy status</dt><dd>Czeka na decyzję</dd></div><div><dt>Kontakt firmy</dt><dd>Zablokowany</dd></div></dl>
+        </article>
+        <article>
+          <div class="connector-top"><span class="connector-logo crm">C</span><div><strong>CRM / webhook</strong><small>Synchronizacja zwrotna</small></div><span class="connector-status design">Projekt</span></div>
+          <p>Po kodzie SIGNAL aktualizuje ten sam kontakt w CRM o konkretne ustalenia i status.</p>
+          <dl><div><dt>Klucz rekordu</dt><dd>external_contact_id</dd></div><div><dt>Aktualizacja</dt><dd>Po zmianie statusu</dd></div><div><dt>Duplikat</dt><dd>Nie powstaje</dd></div></dl>
+        </article>
+      </section>
+
+      <section class="record-lifecycle-card">
+        <div class="lifecycle-heading"><span>CYKL JEDNEGO REKORDU</span><strong>Od wejścia do świadomego działania</strong></div>
+        <div class="record-lifecycle">
+          <div><span>01</span><strong>Lead odebrany</strong><small>ID źródłowe + oferta + kampania</small></div><i>→</i>
+          <div class="waiting"><span>02</span><strong>Czeka na decyzję</strong><small>jeden link · nie kontaktować</small></div><i>→</i>
+          <div><span>03</span><strong>Klient wybiera</strong><small>potrzeba · miejsce · sposób · termin</small></div><i>→</i>
+          <div class="ready"><span>04</span><strong>Ten sam rekord gotowy</strong><small>kod + treść zgody + data</small></div>
+        </div>
+        <div class="lifecycle-branches"><p><span>„Tylko sprawdzam”</span><strong>Bez kontaktu · koniec komunikacji</strong></p><p><span>„Nie”</span><strong>Nie kontaktować · rekord zamknięty</strong></p><p><span>Brak reakcji</span><strong>Wygasa bez kolejnych wiadomości</strong></p></div>
+      </section>
+
+      <section class="mapping-section">
+        <div class="mapping-heading"><div><span>MAPOWANIE DANYCH</span><strong>Co wpływa, co dopisuje SIGNAL</strong></div><p>Firma może nadal analizować źródła i kampanie, ale nie myli technicznego leada z aktualną zgodą na kontakt.</p></div>
+        <div class="records-table-wrap">
+          <table class="records-table mapping-table">
+            <thead><tr><th>Pole</th><th>Ze źródła firmy</th><th>Uzupełnia SIGNAL</th><th>Znaczenie dla zespołu</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Identyfikator</strong></td><td><code>leadgen_id / submission_id</code></td><td>Zachowuje bez zmiany</td><td>Aktualizacja jednego rekordu</td></tr>
+              <tr><td><strong>Oferta, kampania i wejście</strong></td><td>Formularz, reklama, link albo QR</td><td>Przypina wersję warunków i <code>entry</code></td><td>Wiadomo, co klient zobaczył i jak wszedł</td></tr>
+              <tr><td><strong>Kontakt</strong></td><td>Imię, telefon lub e-mail</td><td>Weryfikuje numer kodem</td><td>Brak telefonu przed decyzją</td></tr>
+              <tr><td><strong>Intencja</strong></td><td>Zwykle brak albo ogólna</td><td>Potrzeba, miejsce, działanie</td><td>Rozmowa nie zaczyna się od zera</td></tr>
+              <tr><td><strong>Dostępność</strong></td><td>Brak</td><td>Kanał, data i godzina</td><td>Kontakt w ustalonym momencie</td></tr>
+              <tr><td><strong>Status prawny procesu</strong></td><td>Lead odebrany</td><td>Czeka / potwierdzone / nie / wygasło</td><td>Jednoznaczne prawo do działania</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="dedupe-rule">
+        <div><span>01</span><p><strong>Najpierw ID źródłowe</strong><small>To samo <code>leadgen_id</code> zawsze aktualizuje ten sam rekord.</small></p></div>
+        <div><span>02</span><p><strong>Potem bezpieczne dopasowanie</strong><small>Gdy źródło nie ma ID: firma + znormalizowany telefon + oferta w określonym oknie czasu.</small></p></div>
+        <div><span>03</span><p><strong>Każda zmiana ma historię</strong><small>Źródło, czas, poprzedni status i treść potwierdzenia zostają zapisane.</small></p></div>
+      </section>
+
+      <div class="integration-cta"><p><strong>Efekt dla handlowca:</strong> jedna skrzynka, brak duplikatów i jasna odpowiedź „czy mogę teraz zadzwonić?”.</p><a class="button button-primary" href="panel.html#records">Otwórz wspólną skrzynkę <span>→</span></a></div>
+    </div>
+  </main>
+  <script src="integrations.js"></script>
+</body>
+</html>

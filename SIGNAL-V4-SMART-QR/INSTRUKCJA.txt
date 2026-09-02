@@ -1,0 +1,36 @@
+SIGNAL V4 SMART ENTRY — RĘCZNA AKTUALIZACJA W GITHUB
+
+1. Rozpakuj plik SIGNAL-V4-SMART-QR.zip.
+2. Otwórz repozytorium: https://github.com/jangleba/SIGNAL
+3. Wejdź do obecnego folderu docs.
+4. Wybierz Add file -> Upload files.
+5. Zaznacz WSZYSTKIE pliki znajdujące się WEWNĄTRZ nowego folderu docs.
+6. Przeciągnij je do GitHuba. Zgódź się na zastąpienie plików o tych samych nazwach.
+7. Commit message: SIGNAL V4 — linki, internetowe QR i atrybucja wejścia
+8. Kliknij Commit changes.
+9. Poczekaj około 1–3 minut i odśwież stronę skrótem Ctrl+F5.
+
+STRONA GŁÓWNA
+https://jangleba.github.io/SIGNAL/
+
+WSPÓLNA SKRZYNKA FIRMY
+https://jangleba.github.io/SIGNAL/panel.html
+
+GENERATOR LINKÓW I KODÓW QR
+https://jangleba.github.io/SIGNAL/kampanie.html
+
+MODEL INTEGRACJI
+https://jangleba.github.io/SIGNAL/integracje.html
+
+TEST — QR W ROLCE NA INSTAGRAMIE
+https://jangleba.github.io/SIGNAL/oferta.html?offer=termomodernizacja&source=instagram&campaign=jesien-bez-rachunkow&placement=rolka&entry=qr
+
+TEST — LINK W REKLAMIE NA INSTAGRAMIE
+https://jangleba.github.io/SIGNAL/oferta.html?offer=termomodernizacja&source=instagram&campaign=jesien-bez-rachunkow&placement=reklama&entry=link
+
+TEST — ISTNIEJĄCY LEAD Z FACEBOOKA
+https://jangleba.github.io/SIGNAL/oferta.html?offer=pompa-ciepla&source=facebook&campaign=wymien-stary-piec&mode=confirm&lead=SG-DEMO-479
+
+WAŻNE
+To nadal bezpłatny prototyp statyczny. Nie odbiera prawdziwych leadów i nie wysyła SMS-ów. Funkcje te wymagają później bezpiecznego backendu.
+Generator QR jest bezpłatny, ale potrzebuje internetu, żeby załadować bibliotekę z CDN.
