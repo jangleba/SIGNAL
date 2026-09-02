@@ -1,0 +1,14 @@
+{
+  "name": "SIGNAL Business",
+  "short_name": "SIGNAL",
+  "description": "Kampanie, potwierdzone działania i wyniki sprzedaży w jednym miejscu.",
+  "lang": "pl",
+  "start_url": "panel.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#081f1e",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

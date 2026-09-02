@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f7f6">
+  <meta name="description" content="Szybkie i świadome potwierdzenie zainteresowania ofertą.">
+  <title>Sprawdź ofertę — SIGNAL</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="confirm-app">
+  <main class="confirm-shell">
+    <header class="confirm-topbar">
+      <button type="button" class="confirm-close" data-close aria-label="Zamknij">×</button>
+      <a class="confirm-brand" href="index.html" aria-label="SIGNAL">
+        <svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg>
+        <span>SIGNAL</span>
+      </a>
+      <span class="confirm-secure"><i></i> Bezpieczne połączenie</span>
+    </header>
+
+    <section class="confirm-card" aria-live="polite">
+      <div class="confirm-progress"><i class="active"></i><i></i><i></i></div>
+
+      <article class="confirm-stage active" data-screen="start">
+        <div class="confirm-company">
+          <div class="company-monogram">TP</div>
+          <p><strong data-company>TermoPilot</strong><span data-region>Warszawa i okolice</span></p>
+          <em>Zweryfikowana oferta</em>
+        </div>
+        <p class="confirm-source" data-source-label>Reklama na Instagramie</p>
+        <h1 data-title>Kompleksowa termomodernizacja domu</h1>
+        <p class="confirm-description" data-description>Pompa ciepła, fotowoltaika oraz montaż po sprawdzeniu parametrów budynku.</p>
+        <div class="confirm-facts">
+          <div><span>Orientacyjny koszt</span><strong data-cost>45–75 tys. zł brutto</strong></div>
+          <div><span>Ważny warunek</span><strong data-condition>Dotacja nie jest gwarantowana</strong></div>
+        </div>
+        <p class="confirm-question">Co chcesz zrobić?</p>
+        <div class="confirm-intents">
+          <button type="button" class="primary" data-intent="interested"><span><strong>Chcę sprawdzić dopasowanie</strong><small>3 krótkie wybory · około 45 sekund</small></span><b>→</b></button>
+          <button type="button" data-intent="browse"><span><strong>Tylko oglądam</strong><small>Bez danych i bez kontaktu</small></span><b>○</b></button>
+          <button type="button" class="decline" data-intent="decline"><span><strong>To nie dla mnie</strong><small>Zamknij bez dalszych pytań</small></span><b>×</b></button>
+        </div>
+        <p class="confirm-privacy">Samo kliknięcie niczego nie wysyła. Firma zobaczy dane dopiero po końcowym potwierdzeniu.</p>
+      </article>
+
+      <article class="confirm-stage" data-screen="details" hidden>
+        <button class="confirm-back" type="button" data-back>← Wróć</button>
+        <p class="confirm-eyebrow">Krok 2 z 3</p>
+        <h2>Ustalmy tylko to, co firma musi wiedzieć.</h2>
+        <fieldset class="compact-fieldset"><legend>Czego potrzebujesz?</legend><div class="compact-options" data-needs></div></fieldset>
+        <label class="compact-input"><span>Gdzie ma być wykonana usługa?</span><input id="confirmLocation" autocomplete="postal-code" placeholder="Kod pocztowy lub miejscowość"><small>Bez ulicy i dokładnego adresu.</small></label>
+        <fieldset class="compact-fieldset"><legend>Jaki następny krok wybierasz?</legend><div class="compact-options action-grid">
+          <button type="button" data-action="Krótka rozmowa" data-duration="15 minut"><strong>Krótka rozmowa</strong><small>około 15 min</small></button>
+          <button type="button" data-action="Wstępna wycena" data-duration="25 minut"><strong>Wstępna wycena</strong><small>około 25 min</small></button>
+          <button type="button" data-action="Wizyta doradcy" data-duration="45 minut"><strong>Wizyta doradcy</strong><small>około 45 min</small></button>
+        </div></fieldset>
+        <p class="compact-error" data-details-error role="alert"></p>
+        <button class="confirm-main-button" type="button" data-next-contact disabled>Dalej <span>→</span></button>
+      </article>
+
+      <article class="confirm-stage" data-screen="contact" hidden>
+        <button class="confirm-back" type="button" data-back>← Wróć</button>
+        <p class="confirm-eyebrow">Krok 3 z 3</p>
+        <h2>Wybierz kontakt bez telefonu z zaskoczenia.</h2>
+        <fieldset class="compact-fieldset"><legend>Kiedy?</legend><div class="compact-options slot-grid">
+          <button type="button" data-slot="Jutro, 10:30"><span>Jutro</span><strong>10:30</strong></button>
+          <button type="button" data-slot="Jutro, 17:30"><span>Jutro</span><strong>17:30</strong></button>
+          <button type="button" data-slot="Czwartek, 12:00"><span>Czwartek</span><strong>12:00</strong></button>
+          <button type="button" data-slot="Piątek, 16:00"><span>Piątek</span><strong>16:00</strong></button>
+        </div></fieldset>
+        <div class="compact-contact-fields">
+          <label class="compact-input"><span>Imię</span><input id="confirmName" autocomplete="given-name" placeholder="np. Anna"></label>
+          <label class="compact-input"><span>Numer telefonu</span><input id="confirmPhone" autocomplete="tel" inputmode="tel" placeholder="np. 500 600 700"></label>
+        </div>
+        <div class="confirm-summary" data-summary></div>
+        <label class="confirm-consent"><input type="checkbox" id="confirmConsent"><span data-consent>Proszę wyłącznie TermoPilot o kontakt w wybranej sprawie i terminie.</span></label>
+        <p class="compact-error" data-contact-error role="alert"></p>
+        <button class="confirm-main-button" type="button" data-send-code>Potwierdź numer i ustalenia <span>→</span></button>
+        <div class="compact-otp" data-otp hidden><p><strong>Kod demonstracyjny: 4821</strong><span>W prawdziwej wersji otrzymasz go SMS-em.</span></p><div><input inputmode="numeric" maxlength="4" placeholder="0000" aria-label="Kod SMS" data-otp-input><button type="button" data-confirm>Potwierdzam</button></div></div>
+      </article>
+
+      <article class="confirm-stage terminal" data-screen="browse" hidden><div class="terminal-mark neutral">○</div><h2>Możesz spokojnie oglądać dalej.</h2><p>Nie podano danych, nie powstało zgłoszenie i firma nie otrzymała zgody na kontakt.</p><button class="confirm-main-button" type="button" data-change-mind>Jednak chcę sprawdzić dopasowanie</button><button class="confirm-link-button" type="button" data-close>Zamknij</button></article>
+      <article class="confirm-stage terminal" data-screen="decline" hidden><div class="terminal-mark stop">×</div><h2>Rozumiemy. To koniec.</h2><p>Nie pytamy o powód, nie zapisujemy danych i nie będziemy wysyłać kolejnych wiadomości.</p><button class="confirm-main-button light" type="button" data-close>Zamknij ofertę</button></article>
+      <article class="confirm-stage terminal" data-screen="success" hidden><div class="terminal-mark success">✓</div><p class="confirm-eyebrow">Potwierdzone działanie</p><h2>Wszystko ustalone.</h2><p data-success-text>Firma otrzymała dokładnie wybrany zakres i termin.</p><div class="success-ticket" data-ticket></div><a class="confirm-main-button" href="panel.html">Zobacz tę sprawę w panelu firmy <span>→</span></a><p class="demo-only">Demo zapisuje sprawę tylko w tej przeglądarce.</p></article>
+    </section>
+    <footer class="confirm-footer"><span>POWERED BY SIGNAL</span><p>Jedna firma · jeden cel · jedna świadoma decyzja</p></footer>
+  </main>
+  <script src="signal-store.js"></script>
+  <script src="confirm.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081f1e">
+  <meta name="description" content="Demonstracyjny panel potwierdzonych spraw SIGNAL dla firm.">
+  <title>Centrum kampanii — SIGNAL Business</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <aside class="dashboard-sidebar" data-dashboard-sidebar>
+    <div class="sidebar-logo"><a class="logo inverted" href="panel.html"><svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg><span>SIGNAL</span></a><button type="button" data-sidebar-close aria-label="Zamknij menu">×</button></div>
+    <div class="workspace-switch"><div class="workspace-logo">TP</div><div><strong>TermoPilot</strong><span>Oddzielny workspace</span></div><i>⌄</i></div>
+    <nav class="sidebar-nav" aria-label="Panel firmy">
+      <p>PRACA</p>
+      <a class="active" href="panel.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Przegląd</a>
+      <a href="#records"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Wspólna skrzynka<span class="nav-count">8</span></a>
+      <a href="#"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Kalendarz</a>
+      <p>ZARZĄDZANIE</p>
+      <a href="kampanie.html"><svg viewBox="0 0 24 24"><path d="M10 14 21 3M15 3h6v6M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9"/></svg>Kampanie i linki</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>Oferty</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V4M16 19v-7M22 19V6"/></svg>Wyniki</a>
+      <a href="integracje.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></svg>Integracje</a>
+    </nav>
+    <div class="sidebar-footer"><div class="user-avatar">JG</div><div><strong>Jan Gleba</strong><span>Administrator</span></div><button type="button">•••</button></div>
+  </aside>
+
+  <main class="dashboard-content">
+    <header class="dashboard-topbar">
+      <button class="dashboard-menu" type="button" data-sidebar-open aria-label="Otwórz menu">☰</button>
+      <div class="dashboard-breadcrumb"><span>TermoPilot</span><i>/</i><strong>Centrum kampanii</strong></div>
+      <div class="dashboard-top-actions"><span class="demo-label">Działające demo lokalne</span><button class="reset-demo-button" type="button" data-reset-demo>Wyczyść moje testy</button><button class="icon-button" type="button" aria-label="Powiadomienia"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button></div>
+    </header>
+
+    <div class="dashboard-inner">
+      <section class="dashboard-heading"><div><p>SIGNAL BUSINESS · WSZYSTKIE ŹRÓDŁA</p><h1>Od reklamy do sprzedaży. W jednym miejscu.</h1><span>Instagram, Facebook, TikTok, Google i strona firmy — jeden wynik pokazany prostym językiem.</span></div><a class="button button-dark" href="kampanie.html">Podłącz nową reklamę</a></section>
+
+      <div class="dashboard-trust-note"><span>i</span><p><strong>SIGNAL mierzy wynik po kliknięciu, a nie tylko liczbę formularzy.</strong> Osoba pojawia się imiennie dopiero po świadomym wyborze potrzeby, działania i terminu. „Tylko oglądam” oraz „To nie dla mnie” pozostają anonimowe.</p></div>
+
+      <section class="metric-grid" aria-label="Najważniejsze wskaźniki demonstracyjne">
+        <article><div><span>Wydatki reklamowe</span><i class="metric-dot amber"></i></div><strong>8 420 zł</strong><small>wszystkie aktywne kampanie</small></article>
+        <article><div><span>Potwierdzone działania</span><i class="metric-dot green"></i></div><strong data-ready-count>128</strong><small>rozmowa, wycena albo wizyta</small></article>
+        <article><div><span>Koszt potwierdzenia</span><i class="metric-dot violet"></i></div><strong>65,78 zł</strong><small>zamiast samego kosztu formularza</small></article>
+        <article><div><span>Sprzedaże</span><i class="metric-dot blue"></i></div><strong>19</strong><small>14,8% potwierdzonych działań</small></article>
+      </section>
+
+      <section class="dashboard-analytics compact-analytics">
+        <article class="trend-card">
+          <div class="card-heading"><div><span>Wynik według źródła</span><strong>Potwierdzone działania · ostatnie 30 dni</strong></div><select aria-label="Zakres czasu"><option>30 dni</option><option>7 dni</option></select></div>
+          <div class="source-bars">
+            <div><p><span>Instagram</span><strong>42</strong></p><i><b style="width:100%"></b></i></div>
+            <div><p><span>Facebook</span><strong>31</strong></p><i><b style="width:74%"></b></i></div>
+            <div><p><span>Strona WWW</span><strong>27</strong></p><i><b style="width:64%"></b></i></div>
+            <div><p><span>TikTok / QR</span><strong>18</strong></p><i><b style="width:43%"></b></i></div>
+          </div>
+        </article>
+        <article class="funnel-card">
+          <div class="card-heading"><div><span>Pełna droga wyniku</span><strong>Od wejścia do sprzedaży</strong></div></div>
+          <div class="funnel-list compact">
+            <div><p><span>Oferta otwarta</span><strong>620</strong></p><i><b style="width:100%"></b></i></div>
+            <div><p><span>Działanie potwierdzone</span><strong>128</strong></p><i><b style="width:63%"></b></i></div>
+            <div><p><span>Rozmowa lub wizyta odbyta</span><strong>83</strong></p><i><b style="width:41%"></b></i></div>
+            <div><p><span>Sprzedaż</span><strong>19</strong></p><i><b style="width:18%"></b></i></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="records-section" id="records">
+        <div class="records-heading"><div><h2>Wspólna skrzynka</h2><p>Leady z formularzy i sprawy rozpoczęte przez SIGNAL mają jeden rekord, ale wyraźnie różne uprawnienia do kontaktu.</p></div><span class="records-count" data-records-count>8 wyników</span></div>
+        <div class="inbox-state-line"><div><span class="state-dot pending"></span><p><strong>Lead wpłynął</strong><small>nie kontaktować</small></p></div><i>→</i><div><span class="state-dot waiting"></span><p><strong>Jeden link SIGNAL</strong><small>klient wybiera albo kończy</small></p></div><i>→</i><div><span class="state-dot ready"></span><p><strong>Ten sam rekord gotowy</strong><small>co · gdzie · jak · kiedy</small></p></div></div>
+        <div class="record-toolbar">
+          <label class="record-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="search" placeholder="Szukaj osoby, miejscowości lub kampanii" data-record-search></label>
+          <label><span>Oferta</span><select data-offer-filter><option value="all">Wszystkie oferty</option><option value="termomodernizacja">Termomodernizacja</option><option value="pompa-ciepla">Pompa ciepła</option><option value="fotowoltaika">Fotowoltaika</option></select></label>
+          <label><span>Źródło</span><select data-source-filter><option value="all">Wszystkie źródła</option><option value="instagram">Instagram</option><option value="facebook">Facebook</option><option value="tiktok">TikTok</option><option value="www">Strona WWW</option></select></label>
+          <label><span>Wejście</span><select data-entry-filter><option value="all">Każdy format</option><option value="link">Link SIGNAL</option><option value="qr">Kod QR online</option><option value="form">Formularz / import</option></select></label>
+          <label><span>Status</span><select data-status-filter><option value="all">Każdy status</option><option value="pending">Czeka na decyzję</option><option value="new">Nowe</option><option value="planned">Zaplanowane</option><option value="cancelled">Anulowane</option></select></label>
+          <button class="clear-filters" type="button" data-clear-filters>Wyczyść</button>
+        </div>
+        <div class="records-table-wrap">
+          <table class="records-table rich-records">
+            <thead><tr><th>Klient</th><th>Czego potrzebuje</th><th>Lokalizacja</th><th>Następny krok</th><th>Kiedy</th><th>Źródło / kampania</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr tabindex="0" data-record="karolina" data-record-status="pending" data-record-offer="termomodernizacja" data-record-source="instagram" data-record-entry="form" data-record-search-text="karolina meta lead instagram cieply dom termomodernizacja czeka"><td><div class="table-person"><span>KS</span><p><strong>Karolina S.</strong><small>lead z formularza Meta</small></p></div></td><td><strong class="pending-value">Jeszcze niepotwierdzone</strong><small>reklama: termomodernizacja</small></td><td><strong class="pending-value">Do ustalenia</strong><small>brak potwierdzenia obszaru</small></td><td><strong>Link SIGNAL wysłany</strong><small>nie dzwonić · bez ponagleń</small></td><td><strong>—</strong><small>czeka na wybór klienta</small></td><td><span class="source-badge instagram">Instagram Lead</span><small>Ciepły dom</small></td><td><span class="table-status pending">Czeka na decyzję</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="lukasz" data-record-status="pending" data-record-offer="pompa-ciepla" data-record-source="facebook" data-record-entry="form" data-record-search-text="lukasz facebook lead wymien ogrzewanie pompa ciepla czeka"><td><div class="table-person"><span>ŁB</span><p><strong>Łukasz B.</strong><small>lead z formularza Meta</small></p></div></td><td><strong class="pending-value">Jeszcze niepotwierdzone</strong><small>reklama: pompa ciepła</small></td><td><strong class="pending-value">Do ustalenia</strong><small>brak potwierdzenia obszaru</small></td><td><strong>Link SIGNAL wysłany</strong><small>nie dzwonić · bez ponagleń</small></td><td><strong>—</strong><small>czeka na wybór klienta</small></td><td><span class="source-badge facebook">Facebook Lead</span><small>Wymień ogrzewanie</small></td><td><span class="table-status pending">Czeka na decyzję</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="anna" data-record-status="new" data-record-offer="termomodernizacja" data-record-source="instagram" data-record-entry="qr" data-record-search-text="anna warszawa termomodernizacja instagram jesien bez rachunkow"><td><div class="table-person"><span>AK</span><p><strong>Anna K.</strong><small>500 600 700</small></p></div></td><td><strong>Pełna termomodernizacja</strong><small>oferta: termomodernizacja</small></td><td><strong>00-001 Warszawa</strong><small>obszar zgodny</small></td><td><strong>Wstępna wycena</strong><small>Telefon · 25 min</small></td><td><strong>Jutro</strong><small>17:30</small></td><td><span class="source-badge instagram">Instagram · QR</span><small>Jesień bez rachunków</small></td><td><span class="table-status new">Nowe</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="piotr" data-record-status="planned" data-record-offer="pompa-ciepla" data-record-source="facebook" data-record-entry="form" data-record-search-text="piotr piaseczno pompa ciepla facebook wymien stary piec"><td><div class="table-person"><span>PN</span><p><strong>Piotr N.</strong><small>510 220 440</small></p></div></td><td><strong>Wymiana ogrzewania</strong><small>oferta: pompa ciepła</small></td><td><strong>05-500 Piaseczno</strong><small>obszar zgodny</small></td><td><strong>Wizyta doradcy</strong><small>Na miejscu · 45 min</small></td><td><strong>Czwartek</strong><small>12:00</small></td><td><span class="source-badge facebook">Facebook</span><small>Wymień stary piec</small></td><td><span class="table-status planned">Zaplanowane</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="marta" data-record-status="planned" data-record-offer="fotowoltaika" data-record-source="www" data-record-entry="link" data-record-search-text="marta otwock fotowoltaika strona www kalkulator energii"><td><div class="table-person"><span>MW</span><p><strong>Marta W.</strong><small>690 330 210</small></p></div></td><td><strong>Analiza opłacalności</strong><small>oferta: fotowoltaika</small></td><td><strong>05-400 Otwock</strong><small>obszar zgodny</small></td><td><strong>Krótka rozmowa</strong><small>Telefon · 15 min</small></td><td><strong>Piątek</strong><small>09:30</small></td><td><span class="source-badge www">WWW · link</span><small>Kalkulator energii</small></td><td><span class="table-status planned">Zaplanowane</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="jakub" data-record-status="new" data-record-offer="termomodernizacja" data-record-source="tiktok" data-record-entry="qr" data-record-search-text="jakub pruszkow termomodernizacja tiktok dom 180m2"><td><div class="table-person"><span>JZ</span><p><strong>Jakub Z.</strong><small>602 114 820</small></p></div></td><td><strong>Najpierw ocena doradcy</strong><small>oferta: termomodernizacja</small></td><td><strong>05-800 Pruszków</strong><small>obszar zgodny</small></td><td><strong>Krótka rozmowa</strong><small>Wideorozmowa · 15 min</small></td><td><strong>Jutro</strong><small>10:30</small></td><td><span class="source-badge tiktok">TikTok · QR</span><small>Dom 180 m²</small></td><td><span class="table-status new">Nowe</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="elzbieta" data-record-status="planned" data-record-offer="pompa-ciepla" data-record-source="www" data-record-entry="qr" data-record-search-text="elzbieta legionowo pompa ciepla kod qr targi dom i energia"><td><div class="table-person"><span>ER</span><p><strong>Elżbieta R.</strong><small>788 410 092</small></p></div></td><td><strong>Dobór mocy pompy</strong><small>oferta: pompa ciepła</small></td><td><strong>05-120 Legionowo</strong><small>obszar zgodny</small></td><td><strong>Wstępna wycena</strong><small>Telefon · 25 min</small></td><td><strong>Sobota</strong><small>11:00</small></td><td><span class="source-badge www">Webinar · QR</span><small>Ciepły dom LIVE</small></td><td><span class="table-status planned">Zaplanowane</span></td><td>→</td></tr>
+              <tr tabindex="0" data-record="tomasz" data-record-status="cancelled" data-record-offer="fotowoltaika" data-record-source="instagram" data-record-entry="link" data-record-search-text="tomasz grodzisk mazowiecki fotowoltaika instagram magazyn energii anulowane"><td><div class="table-person"><span>TK</span><p><strong>Tomasz K.</strong><small>numer ukryty</small></p></div></td><td><strong>Fotowoltaika z magazynem</strong><small>oferta: fotowoltaika</small></td><td><strong>05-825 Grodzisk Maz.</strong><small>obszar zgodny</small></td><td><strong>Nie kontaktować</strong><small>potwierdzenie anulowane</small></td><td><strong>—</strong><small>anulowano</small></td><td><span class="source-badge instagram">Instagram · link</span><small>Magazyn energii</small></td><td><span class="table-status cancelled">Anulowane</span></td><td>→</td></tr>
+            </tbody>
+          </table>
+          <div class="empty-records" data-empty-records hidden><span>○</span><strong>Brak spraw spełniających filtry</strong><small>Zmień filtry albo wyczyść wyszukiwanie.</small></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="record-drawer-backdrop" data-drawer-backdrop hidden></div>
+  <aside class="record-drawer" data-record-drawer aria-hidden="true">
+    <div class="drawer-header"><div><span>Karta świadomego potwierdzenia</span><strong data-drawer-id>#SG-DEMO-482</strong></div><button type="button" data-drawer-close aria-label="Zamknij">×</button></div>
+    <div class="drawer-person"><div class="avatar" data-drawer-avatar>AK</div><div><h2 data-drawer-name>Anna K.</h2><p data-drawer-phone>500 600 700 · numer zweryfikowany</p></div><span class="status-pill confirmed" data-drawer-status><i></i> Potwierdzone</span></div>
+    <div class="drawer-summary-grid"><div><span>CZEGO</span><strong data-drawer-need>Pełna termomodernizacja</strong></div><div><span>GDZIE</span><strong data-drawer-location>00-001 Warszawa</strong></div><div><span>CO DALEJ</span><strong data-drawer-action>Wstępna wycena</strong></div><div><span>KIEDY</span><strong data-drawer-time>Jutro, 17:30</strong></div></div>
+    <div class="drawer-section"><p>USTALENIA DO OBSŁUGI</p><dl><div><dt>Kanał</dt><dd data-drawer-channel>Telefon</dd></div><div><dt>Przewidywany czas</dt><dd data-drawer-duration>25 minut</dd></div><div><dt>Oferta</dt><dd data-drawer-offer>Termomodernizacja domu</dd></div><div><dt>Znany koszt</dt><dd data-drawer-cost>45–75 tys. zł brutto</dd></div><div><dt>Znany warunek</dt><dd data-drawer-condition>Dotacja nie jest gwarantowana</dd></div></dl></div>
+    <div class="drawer-section"><p>ATRYBUCJA I SPOSÓB WEJŚCIA</p><dl><div><dt>Rekord powstał</dt><dd data-drawer-origin>Bezpośrednio przez SIGNAL</dd></div><div><dt>Źródło</dt><dd data-drawer-source>Instagram</dd></div><div><dt>Format wejścia</dt><dd data-drawer-entry>Kod QR online</dd></div><div><dt>Kampania</dt><dd data-drawer-campaign>Jesień bez rachunków</dd></div><div><dt>Link oferty</dt><dd class="drawer-link" data-drawer-link>/oferta.html?…</dd></div></dl></div>
+    <div class="drawer-section consent-proof"><p>DOKŁADNA TREŚĆ POTWIERDZENIA</p><blockquote data-drawer-consent>„Chcę, aby wyłącznie TermoPilot skontaktował się ze mną w sprawie wstępnej wyceny telefonicznie jutro o 17:30.”</blockquote><span data-drawer-proof-note>Potwierdzone jednorazowym kodem na wskazanym numerze.</span></div>
+    <div class="drawer-section"><p>HISTORIA REKORDU</p><ol class="proof-timeline"><li><i></i><div><strong data-drawer-event-one>Oferta otwarta z oznaczonego linku</strong><span data-drawer-opened>Dzisiaj, 18:42</span></div></li><li><i></i><div><strong data-drawer-event-two>Wybrano potrzebę, miejsce, działanie i termin</strong><span data-drawer-selected>Dzisiaj, 18:44</span></div></li><li><i></i><div><strong data-drawer-event-three>Numer i całość potwierdzone kodem</strong><span data-drawer-confirmed>Dzisiaj, 18:45</span></div></li></ol></div>
+    <div class="drawer-actions"><button class="button button-primary" type="button" data-drawer-primary>Oznacz jako obsłużone</button><button class="button button-light" type="button" data-drawer-secondary>Zmień termin</button></div>
+  </aside>
+  <script src="signal-store.js"></script>
+  <script src="panel.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>
