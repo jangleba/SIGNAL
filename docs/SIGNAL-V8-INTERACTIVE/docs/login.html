@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081f1e">
+  <meta name="description" content="Logowanie do panelu SIGNAL dla Firm — wersja demonstracyjna.">
+  <title>Logowanie — SIGNAL dla Firm</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <div class="login-brand-panel">
+    <a class="logo inverted" href="dla-firm.html"><svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg><span>SIGNAL</span></a>
+    <div class="login-brand-copy"><p>Panel dla firm</p><h1>Leady i potwierdzone działania w jednym miejscu.</h1><span>Źródła · decyzje · terminy · wyniki</span></div>
+    <small>Wersja demonstracyjna produktu</small>
+  </div>
+  <main class="login-main">
+    <a class="login-back" href="dla-firm.html">← Wróć do strony dla firm</a>
+    <section class="login-box">
+      <div><p class="overline">SIGNAL dla Firm</p><h2>Zaloguj się do panelu</h2><p>Dostęp otrzymują wyłącznie użytkownicy zaproszeni przez administratora firmy.</p></div>
+      <form data-login-form>
+        <label><span>Służbowy adres e-mail</span><input type="email" placeholder="imie@firma.pl" autocomplete="email" required></label>
+        <button class="button button-primary full-button" type="submit">Wyślij jednorazowy link <span>→</span></button>
+        <p class="login-message" data-login-message></p>
+      </form>
+      <div class="login-divider"><span>Wersja demonstracyjna</span></div>
+      <a class="button button-light full-button" href="panel.html">Otwórz demo bez logowania</a>
+      <p class="login-security"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2"/><rect x="5" y="10" width="14" height="11" rx="2"/></svg>Firma widzi wyłącznie dane przypisane do własnej organizacji.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>

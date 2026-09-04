@@ -1,0 +1,40 @@
+SIGNAL V8 — INTERAKTYWNY PRODUKT
+
+JAK WRZUCIĆ NA GITHUB
+1. Rozpakuj paczkę SIGNAL-V8-INTERACTIVE.zip.
+2. Otwórz repozytorium https://github.com/jangleba/SIGNAL
+3. Usuń stare pliki i foldery z głównego widoku repozytorium.
+4. Kliknij Add file → Upload files.
+5. Przeciągnij CAŁY folder „docs” z tej paczki.
+6. Zaczekaj, aż GitHub pokaże wszystkie pliki.
+7. Wpisz opis: SIGNAL V8 — interaktywny produkt
+8. Kliknij Commit changes.
+9. GitHub Pages pozostaw ustawione na branch „main” oraz folder „/docs”.
+
+TRZY NAJWAŻNIEJSZE ADRESY
+
+1. Aplikacja firmy:
+https://jangleba.github.io/SIGNAL/panel.html
+
+2. Podłączenie reklamy i wygenerowanie linku:
+https://jangleba.github.io/SIGNAL/kampanie.html
+
+3. Przykładowy ekran klienta po kliknięciu reklamy na Instagramie:
+https://jangleba.github.io/SIGNAL/oferta.html?offer=termomodernizacja&source=instagram&campaign=jesien-bez-rachunkow&placement=rolka&entry=link
+
+JAK PRZETESTOWAĆ PEŁNY OBIEG
+1. Otwórz „Podłączenie reklamy”.
+2. Wybierz ofertę, Instagram i miejsce publikacji.
+3. Skopiuj wygenerowany link albo otwórz podgląd.
+4. Na ekranie klienta wybierz potrzebę, miejscowość, działanie oraz termin.
+5. Podaj dowolne imię i dziewięciocyfrowy numer testowy.
+6. Zaznacz świadomą zgodę.
+7. Wpisz kod demonstracyjny: 4821.
+8. Kliknij „Zobacz tę sprawę w panelu firmy”.
+9. Nowa sprawa pojawi się na początku wspólnej skrzynki.
+
+WAŻNE
+- Klient niczego nie instaluje. Strona SIGNAL otwiera się w przeglądarce Instagrama, Facebooka lub TikToka.
+- SIGNAL Business może być dodany do ekranu telefonu jak aplikacja PWA.
+- To nadal demonstrator. Dane zapisują się lokalnie tylko w tej samej przeglądarce.
+- Prawdziwe SMS-y, wspólne dane na wielu telefonach, logowanie i automatyczne pobieranie kampanii wymagają backendu i integracji API.

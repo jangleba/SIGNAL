@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071f1d">
+  <meta name="description" content="SIGNAL — świadoma decyzja klienta i konkretny wynik dla firmy.">
+  <title>SIGNAL — od kliknięcia do konkretnego działania</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="signal-launcher">
+  <header class="launcher-header">
+    <a class="launcher-logo" href="index.html" aria-label="SIGNAL">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M6 9.5h13.5a5 5 0 0 1 0 10H14a4.5 4.5 0 0 0 0 9h14"/><circle cx="27" cy="9.5" r="2.8"/></svg>
+      <strong>SIGNAL</strong>
+    </a>
+    <div class="launcher-live"><i></i><span>System działa</span></div>
+    <a class="launcher-login" href="panel.html">Panel firmy <span>↗</span></a>
+  </header>
+
+  <main class="launcher-main">
+    <section class="launcher-intro">
+      <p>JEDEN SYSTEM · DWA WIDOKI</p>
+      <h1>Nie zbieraj kontaktów.<br><span>Ustalaj następny krok.</span></h1>
+      <div class="role-switch" role="tablist" aria-label="Wybierz widok">
+        <button class="active" type="button" role="tab" aria-selected="true" data-role="client"><i>01</i> Jestem klientem</button>
+        <button type="button" role="tab" aria-selected="false" data-role="business"><i>02</i> Prowadzę firmę</button>
+      </div>
+    </section>
+
+    <section class="launcher-stage">
+      <article class="role-scene active" data-role-scene="client">
+        <div class="scene-note"><span>Po kliknięciu reklamy</span><strong>Decyzja bez telefonu z zaskoczenia</strong></div>
+        <div class="phone-surface">
+          <div class="phone-top"><span>×</span><strong>SIGNAL</strong><i></i></div>
+          <div class="phone-progress"><i></i><i></i><i></i></div>
+          <div class="mini-company"><b>TP</b><p><strong>TermoPilot</strong><span>Zweryfikowana oferta</span></p></div>
+          <small class="mini-source">REKLAMA NA INSTAGRAMIE</small>
+          <h2>Termomodernizacja domu</h2>
+          <div class="mini-price"><span>Orientacyjnie</span><strong>45–75 tys. zł</strong></div>
+          <p class="mini-question">Co chcesz zrobić?</p>
+          <button class="mini-choice primary" type="button" data-demo-choice><span><strong>Sprawdzam dopasowanie</strong><small>około 45 sekund</small></span><b>→</b></button>
+          <button class="mini-choice" type="button" data-demo-browse><span><strong>Tylko oglądam</strong><small>bez danych</small></span><b>○</b></button>
+          <div class="mini-feedback" data-mini-feedback><i>✓</i><span>Żadne dane nie zostały wysłane</span></div>
+        </div>
+        <div class="scene-action"><p><strong>Bez aplikacji.</strong><span>Otwiera się wewnątrz Instagrama.</span></p><a href="oferta.html?offer=termomodernizacja&amp;source=instagram&amp;campaign=demo-signal&amp;placement=rolka&amp;entry=link">Przejdź cały proces <span>→</span></a></div>
+      </article>
+
+      <article class="role-scene" data-role-scene="business" hidden>
+        <div class="scene-note"><span>SIGNAL BUSINESS</span><strong>Wynik wszystkich kampanii w jednym miejscu</strong></div>
+        <div class="business-surface">
+          <div class="business-surface-top"><div><span>SIGNAL</span><strong>Dzień dobry, Jan.</strong></div><button type="button">+ Podłącz reklamę</button></div>
+          <div class="source-tabs" role="tablist">
+            <button class="active" type="button" data-source-demo="all">Wszystkie</button>
+            <button type="button" data-source-demo="instagram">Instagram</button>
+            <button type="button" data-source-demo="facebook">Facebook</button>
+            <button type="button" data-source-demo="google">Google</button>
+          </div>
+          <div class="surface-metrics">
+            <div><span>Wydano</span><strong data-demo-spend>8 420 zł</strong><small>30 dni</small></div>
+            <div class="accent"><span>Potwierdzenia</span><strong data-demo-confirmed>128</strong><small data-demo-cost>65,78 zł / wynik</small></div>
+            <div><span>Sprzedaże</span><strong data-demo-sales>19</strong><small data-demo-conversion>14,8% potwierdzeń</small></div>
+          </div>
+          <div class="surface-chart"><div class="chart-title"><span>Potwierdzone działania</span><strong data-chart-label>Wszystkie źródła</strong></div><div class="chart-bars" data-chart-bars><i style="--h:34%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:68%"></i><i style="--h:57%"></i><i style="--h:82%"></i><i style="--h:76%"></i><i style="--h:94%"></i></div></div>
+          <div class="surface-record"><b>AK</b><p><strong>Anna K.</strong><span>Wstępna wycena · jutro 17:30</span></p><em>NOWE</em><i>→</i></div>
+        </div>
+        <div class="scene-action"><p><strong>Jedna skrzynka.</strong><span>Kampania, termin i wynik sprzedaży.</span></p><a href="panel.html">Otwórz panel firmy <span>→</span></a></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="launcher-footer"><span>Reklama</span><i>→</i><span>Świadomy wybór</span><i>→</i><strong>Potwierdzone działanie</strong></footer>
+  <script src="launcher.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>
